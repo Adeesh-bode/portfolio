@@ -1,0 +1,204 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{   
+    background-color: rgb(4, 56, 23);
+    /*
+    background-image: url(portfoliobg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    */
+    color:aliceblue;
+    
+
+}
+header
+{   
+    background-color:transparent;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    padding:20px 10px; /* x axis than y-axis k around padding*/
+    display: flex;  /*flex???*/
+    justify-content: space-between;  /* header class mai 2 he obj hai..unke bich mai jagah maximum..
+    align-items: center; /* iska ??? */
+    justify-content: baseline;
+}
+#logo
+{
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    top: 0;
+    left: 120px;
+}
+.navbar a
+{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+}
+.navbar a:hover
+{
+    color: aqua;
+}
+.navbar a.active
+{
+    color:aqua
+}
+.home
+{   
+    display:flex;
+    height:100vh;
+    align-items: center;
+    padding: 0 10%;
+    background-image: url(https://icons8.com/illustrations);
+    
+
+    /*
+    color:aliceblue;
+    position:absolute;
+    top:200px;
+    left:40px;
+    */
+
+}
+.home-content
+{
+    max-width:600px;
+
+}
+.home-content h1
+{
+    font-size:45px;
+    line-height: 1.5;
+    padding-bottom: 4px;;
+}
+.home-content h3
+{
+    font-size:16px;
+    color:aqua
+}
+.home-content p
+{
+    font-size: 16px;
+    margin:20px 0 40px;
+}
+
+
+
+.home-content .btn-box
+{   
+    display: flex;
+    justify-content: space-between;
+    width:345px;
+    height:50px;
+    background-color:transparent;
+
+
+}
+.btn-box a
+{   
+    position: relative;
+    display:inline-flex; /* diffe inline block & flex*/
+    justify-content: center;
+    width:150px;
+    height: 100%;
+    align-items: center;
+    background-color:aqua;
+    border:2px solid aqua;
+    border-radius:12px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600px;
+    letter-spacing: 1px;
+
+    transition: .5s;
+    color: black;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.btn-box a::before/*ye rectangle leke denga..ksuperimposed on btn-box*/
+{       
+    content:'';
+    position: absolute;
+    color:aqua;
+    left:0;
+    top:0;
+    width: 0;
+    height: 100%;
+    
+    background-color: transparent;/* make it red thn understand*/
+    transition: 1s;
+}
+.btn-box a:hover
+{
+    color: black;
+
+}
+.btn-box a:nth-child(2)
+{
+    background: transparent;
+    color: aqua;
+
+}
+.btn-box a:nth-child(2):hover
+{
+    color:black;
+    background-color: aqua;
+}
+.btn-box a:nth-child(1):hover
+{
+    color:aqua;
+    background-color:transparent;
+}
+.btn-box a:nth-child(2):before
+{
+    background: aqua;
+    color: aqua;
+}
+.btn-box a:hover::before/* after hover before aenga...*/
+{
+    width:100%;
+    background-color: transparent;
+}
+.home-sci
+{
+    position: absolute;
+    bottom: 40px;
+    width:150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a
+{   
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    justify-content: center;/* horizontal alignment*/
+    align-items: center;/*vertical align*/
+    color: aqua;
+    z-index:1;
+    overflow: hidden;
+    background-color:transparent;
+    text-decoration: none;
+
+}
